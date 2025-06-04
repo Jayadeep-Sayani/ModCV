@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Prevent drag artifacts */
+* {
+  touch-action: manipulation;
+}
