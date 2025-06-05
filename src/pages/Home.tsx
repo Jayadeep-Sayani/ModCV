@@ -1,6 +1,7 @@
 import { useResumeStore } from '../store/resumeStore';
 import SectionList from '../components/SectionList';
 import SectionEditor from '../components/SectionEditor';
+import LatexExport from '../components/LatexExport';
 
 export default function Home() {
   const sections = useResumeStore((s) => s.sections);
@@ -17,6 +18,8 @@ export default function Home() {
             <SectionEditor sectionType={section.type} />
           </div>
         ))}
+
+        <LatexExport />
     </div>
   );
 }
